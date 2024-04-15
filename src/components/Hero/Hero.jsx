@@ -1,24 +1,13 @@
 import "./Hero.css";
-import { motion, useAnimation } from "framer-motion";
-import { useEffect, useState } from "react";
+import { motion, easeIn } from "framer-motion";
 
 const Hero = () => {
-  const [loaded, setLoaded] = useState(false);
-  const controls = useAnimation();
-
-  useEffect(() => {
-    // Trigger animation once the component is mounted
-    controls.start({
-      y: 0,
-      opacity: 1,
-      transition: { duration: 0.75, ease: "easeOut" },
-    });
-    setLoaded(true);
-  }, [controls]);
   return (
     <motion.div
-      style={{ y: loaded ? 0 : -100, opacity: loaded ? 1 : 0 }}
-      animate={controls}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.75, ease: easeIn }}
+      id="hero"
     >
       <div className="container">
         <div className="hero">

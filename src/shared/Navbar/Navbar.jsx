@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./Navbar.css";
 import { motion, useAnimation } from "framer-motion";
 
@@ -11,7 +11,7 @@ const Navbar = () => {
     controls.start({
       y: 0,
       opacity: 1,
-      transition: { duration: 0.75, ease: "easeOut" },
+      transition: { duration: 0.75, ease: "easeIn" },
     });
     setLoaded(true);
   }, [controls]);
@@ -27,7 +27,9 @@ const Navbar = () => {
         </div>
         <div className="links">
           <ul>
-            <li>About Me</li>
+            <li>
+              <a href="#about">About Me</a>
+            </li>
             <li>Skills</li>
             <li>Portfolio</li>
           </ul>
