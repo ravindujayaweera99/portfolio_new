@@ -1,0 +1,44 @@
+.navbar {
+    background-color: #343539;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5vw;
+}
+
+.navbar .links ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.navbar .logo {
+    color: #FFC86A;
+}
+
+.navbar .links ul li {
+    color: #B5B5B5;
+}
+
+.navbar .links ul li:hover {
+    color: #fff;
+    transition: 0.3s ease-in;
+}
+
+.navbar .hireme button {
+    padding: 10px 50px;
+    border-radius: 8px;
+    border: none;
+    background-color: #FFC86A;
+    font-weight: 600;
+    font-size: 12px;
+    border: 1px solid #343539;
+}
+
+.navbar .hireme button:hover {
+    background-color: #343539;
+    border: 1px solid #FFC86A;
+    transition: 0.3s ease-in;
+    color: #FFC86A;
+}

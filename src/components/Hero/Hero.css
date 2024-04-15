@@ -1,0 +1,41 @@
+.hero {
+    display: flex;
+    justify-content: space-around;
+    min-height: 90vh;
+}
+
+.hero .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    color: #B5B5B5;
+}
+
+.hero .left .name {
+    color: #FFC86A;
+}
+
+.hero .left .cv {
+    padding: 10px 50px;
+    border-radius: 8px;
+    border: none;
+    background-color: #FFC86A;
+    font-weight: 600;
+    font-size: 12px;
+    border: 1px solid #343539;
+    width: 40%;
+}
+
+.hero .left .cv:hover {
+    background-color: #343539;
+    border: 1px solid #FFC86A;
+    transition: 0.3s ease-in;
+    color: #FFC86A;
+}
+
+.hero .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
