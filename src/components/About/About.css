@@ -8,13 +8,53 @@
     margin: auto;
 }
 
+.about .wrapper {
+    border: 2px solid #FFC86A;
+    border-radius: 8px;
+    padding: 30px 80px;
+}
+
 .about h1 {
     color: #FFC86A;
     font-size: 50px;
+    text-align: center;
 }
 
 .about p {
     color: #B5B5B5;
     font-size: 20px;
     text-align: justify;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .about {
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .about {
+        width: 80vw;
+        margin: 0;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about .image {
+        display: none;
+    }
+
+    .about h1 {
+        font-size: 15px;
+    }
+
+    .about p {
+        font-size: 12px;
+    }
+
+    .about .wrapper {
+        padding: 10px 30px;
+    }
 }
