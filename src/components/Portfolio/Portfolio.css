@@ -89,8 +89,16 @@
         border-radius: 8px;
     }
 
-    .portfolio-wrapper h1 {
+    .portfolio-wrapper .portfolio-title {
         font-size: 15px;
-        margin-top: 50px;
+        margin-top: 150px;
+    }
+
+    .project .details h1 {
+        font-size: 12px;
+    }
+
+    .project .details p {
+        font-size: 10px;
     }
 }
