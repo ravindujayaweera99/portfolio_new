@@ -77,6 +77,10 @@
         position: relative;
     }
 
+    .portfolio {
+        gap: 50px;
+    }
+
     .project .details {
         opacity: 1;
         position: absolute;
