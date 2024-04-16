@@ -3,9 +3,8 @@ import "./About.css";
 const About = () => {
   return (
     <div className="about" id="about">
-      <h1 className="image">Insert an Image here</h1>
+      <h1>Something little About me</h1>
       <div className="wrapper">
-        <h1>Something little About me</h1>
         <p>
           "Hey, I'm Ravindu Jayaweera, a web enthusiast with 2 years of
           experience in the digital realm. I've had the pleasure of crafting

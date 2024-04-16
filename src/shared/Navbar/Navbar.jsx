@@ -23,15 +23,19 @@ const Navbar = () => {
     >
       <div className="navbar">
         <div className="logo">
-          <h1>RJ</h1>
+          <h1>
+            <a href="#">RJ</a>
+          </h1>
         </div>
         <div className="links">
           <ul>
             <li>
               <a href="#about">About Me</a>
             </li>
-            <li>Skills</li>
-            <li>Portfolio</li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li><a href="#portfolio">Portfolio</a></li>
           </ul>
         </div>
         <div className="hireme">

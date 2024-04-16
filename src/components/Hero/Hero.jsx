@@ -1,5 +1,10 @@
 import "./Hero.css";
 import { motion, easeIn } from "framer-motion";
+import cv from "../../assets/Ravindu.pdf";
+
+const openCv = () => {
+  window.open(cv);
+};
 
 const Hero = () => {
   return (
@@ -17,10 +22,9 @@ const Hero = () => {
             </h1>
             <h2>Freelance Web Developer</h2>
             <button className="hire">Hire Me</button>
-            <button className="cv">Take a Look on my CV</button>
-          </div>
-          <div className="right">
-            <h1>Image Apprears Here</h1>
+            <button className="cv" onClick={openCv}>
+              Take a Look on my CV
+            </button>
           </div>
           <h4>Scroll Down to Explore about Me!</h4>
         </div>
