@@ -34,13 +34,25 @@ const Hero = () => {
               <h4>-</h4>
             </li>
             <li>
-              <a href="#">Github</a>
+              <a href="https://github.com/ravindujayaweera99" target="_blank">
+                Github
+              </a>
             </li>
             <li>
-              <a href="#">Linkedin</a>
+              <a
+                href="https://www.linkedin.com/in/ravindu-jayaweera-a170721b9/"
+                target="_blank"
+              >
+                Linkedin
+              </a>
             </li>
             <li>
-              <a href="#">Facebook</a>
+              <a
+                href="https://web.facebook.com/ravindu.jayaweera.96/"
+                target="_blank"
+              >
+                Facebook
+              </a>
             </li>
             <li>
               <h4>-</h4>
