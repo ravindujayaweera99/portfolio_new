@@ -43,13 +43,15 @@
     color: #B5B5B5;
 }
 
-.contact-wrapper form input {
+.contact-wrapper form input,
+.contact-wrapper form textarea {
     background-color: #343539;
     border: 1px solid #FFC86A;
     border-radius: 3px;
 }
 
-.contact-wrapper form input:focus {
+.contact-wrapper form input:focus,
+.contact-wrapper form textarea:focus {
     background-color: #ffc86a;
     color: #000;
 }
