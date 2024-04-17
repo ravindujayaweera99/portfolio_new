@@ -21,7 +21,9 @@ const Hero = () => {
               I'm <span className="name">Ravindu Jayaweera</span>
             </h1>
             <h2>Freelance Web Developer</h2>
-            <button className="hire">Hire Me</button>
+            <button className="hire">
+              <a href="#contact">Hire Me</a>
+            </button>
             <button className="cv" onClick={openCv}>
               Take a Look at my CV
             </button>

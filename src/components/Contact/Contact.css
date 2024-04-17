@@ -1,0 +1,88 @@
+.contact-title {
+    color: #FFC86A;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#contact {
+    margin-bottom: 50px;
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #FFC86A;
+    border-radius: 8px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+}
+
+.contact-wrapper .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-wrapper form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 25px;
+}
+
+.contact-wrapper form label {
+    color: #B5B5B5;
+}
+
+.contact-wrapper form input {
+    background-color: #343539;
+    border: 1px solid #FFC86A;
+    border-radius: 3px;
+}
+
+.contact-wrapper form input:focus {
+    background-color: #ffc86a;
+    color: #000;
+}
+
+.contact-wrapper form button {
+    width: 50%;
+    border-radius: 8px;
+}
+
+.contact-wrapper form button {
+    padding: 10px 50px;
+    border-radius: 8px;
+    border: none;
+    background-color: #FFC86A;
+    font-weight: 600;
+    font-size: 12px;
+    border: 1px solid #343539;
+    width: 100%;
+}
+
+.contact-wrapper form button:hover {
+    background-color: #343539;
+    border: 1px solid #FFC86A;
+    transition: 0.3s ease-in;
+    color: #FFC86A;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .contact-wrapper {
+        width: 90%;
+    }
+
+    .contact-wrapper form {
+        width: 90%;
+    }
+}
