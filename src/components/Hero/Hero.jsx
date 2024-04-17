@@ -23,7 +23,7 @@ const Hero = () => {
             <h2>Freelance Web Developer</h2>
             <button className="hire">Hire Me</button>
             <button className="cv" onClick={openCv}>
-              Take a Look on my CV
+              Take a Look at my CV
             </button>
           </div>
           <h4>Scroll Down to Explore about Me!</h4>
