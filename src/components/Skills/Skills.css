@@ -51,7 +51,7 @@
     width: 100px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
     .skills-wrapper {
         display: block;
         min-height: 100vh;
