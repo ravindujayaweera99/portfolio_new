@@ -77,6 +77,7 @@
     border: 1px solid #FFC86A;
     transition: 0.3s ease-in;
     color: #FFC86A;
+    cursor: pointer;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
