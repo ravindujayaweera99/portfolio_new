@@ -48,12 +48,16 @@
     background-color: #343539;
     border: 1px solid #FFC86A;
     border-radius: 3px;
+    height: 32px;
 }
 
 .contact-wrapper form input:focus,
 .contact-wrapper form textarea:focus {
     background-color: #ffc86a;
     color: #000;
+    outline: none;
+    transition: 0.5s;
+    border: 1px solid #343539;
 }
 
 .contact-wrapper form button {

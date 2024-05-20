@@ -36,7 +36,7 @@ const Contact = () => {
 
   return (
     <div id="contact">
-      <h1 className="contact-title">Let Me know your Requirement</h1>
+      <h1 className="contact-title">Let Me Know Your Requirement</h1>
       <div className="contact-wrapper">
         <form ref={form} onSubmit={sendEmail} id="contact-from">
           <div className="form-group">
