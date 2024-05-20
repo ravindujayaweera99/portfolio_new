@@ -39,7 +39,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="hireme">
-          <button><a href="#contact">Hire Me</a></button>
+        <a href="#contact"><button>Hire Me</button></a>
         </div>
       </div>
     </motion.div>

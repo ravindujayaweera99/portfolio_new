@@ -39,6 +39,7 @@
     font-weight: 600;
     font-size: 12px;
     border: 1px solid #343539;
+    cursor: pointer;
 }
 
 .navbar .hireme button:hover {
