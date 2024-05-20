@@ -3,6 +3,7 @@ import sanlak from "../../assets/project-images/sanlak.png";
 import portfolio from "../../assets/project-images/portfolio.png";
 import coffee from "../../assets/project-images/coffee.png";
 import dummy from "../../assets/project-images/dummy.webp";
+import discussion from "../../assets/project-images/discussion.png";
 
 const projects = [
   {
@@ -37,6 +38,14 @@ const projects = [
     img: coffee,
     link: "https://ravindujayaweera99.github.io/landing_coffee/",
   },
+  {
+    id: 5,
+    name: "Discussion Website Front-end",
+    desc: "Specially made for a client from Malta.This is only a front end Development for a discussion web application.",
+    tech: "HTML, CSS, Figma",
+    img: discussion,
+    link: "https://ravindujayaweera99.github.io/Discussion_web_frontend/",
+  },
 ];
 
 const Portfolio = () => {
@@ -52,6 +61,8 @@ const Portfolio = () => {
                 <div className="details">
                   <h1>{p.name}</h1>
                   <p>{p.desc}</p>
+                  <h3>Used Technologeis</h3>
+                  <p id="tech-stack">{p.tech}</p>
                 </div>
               </a>
             </div>

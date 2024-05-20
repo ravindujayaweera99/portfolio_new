@@ -29,7 +29,8 @@
 }
 
 .portfolio .project {
-    width: 300px;
+    width: 500px;
+    height: 300px;
     /* Adjust as needed */
     margin: 10px;
     position: relative;
@@ -37,7 +38,7 @@
 
 .portfolio .project img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     border-radius: 8px;
     transition: opacity 0.3s ease;
 }
@@ -67,10 +68,26 @@
     width: 100%;
     height: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .project .details p {
     text-align: justify;
+}
+
+.project .details h3 {
+    margin-top: 32px;
+    color: #FFC86A;
+    font-weight: 300;
+}
+
+.project .details #tech-stack {
+    margin-top: 32px;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .project:hover .details {
