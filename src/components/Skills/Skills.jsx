@@ -7,60 +7,60 @@ import php from "../../assets/php.png";
 import mysql from "../../assets/mysql.png";
 import node from "../../assets/node-js.png";
 import mongodb from "../../assets/mongodb.png";
-import postgre from "../../assets/postgresql.png";
+import express from "../../assets/express.png";
 import java from "../../assets/java.png";
 import figma from "../../assets/figma.png";
 
 const skills = [
   {
     id: 1,
-    name: "HTML",
-    image: html,
-  },
-  {
-    id: 2,
-    name: "CSS",
-    image: css,
-  },
-  {
-    id: 3,
-    name: "Javascript",
-    image: js,
-  },
-  {
-    id: 4,
-    name: "React",
+    name: "React.js",
     image: react,
   },
   {
-    id: 5,
-    name: "php",
-    image: php,
+    id: 2,
+    name: "Node.js",
+    image: node,
   },
   {
-    id: 6,
-    name: "mySQL",
-    image: mysql,
+    id: 3,
+    name: "Express.js",
+    image: express,
   },
   {
-    id: 7,
+    id: 4,
     name: "MongoDB",
     image: mongodb,
   },
   {
+    id: 5,
+    name: "HTML",
+    image: html,
+  },
+  {
+    id: 6,
+    name: "CSS",
+    image: css,
+  },
+  {
+    id: 7,
+    name: "Javascript",
+    image: js,
+  },
+  {
     id: 8,
-    name: "PostgreSQL",
-    image: postgre,
+    name: "php",
+    image: php,
   },
   {
     id: 9,
-    name: "Java",
-    image: java,
+    name: "mySQL",
+    image: mysql,
   },
   {
     id: 10,
-    name: "Node.js",
-    image: node,
+    name: "Java",
+    image: java,
   },
   {
     id: 11,
@@ -75,7 +75,9 @@ const Skills = () => {
       <div className="skills">
         {skills.map((s) => (
           <div key={s.id} className="skill">
-            <img src={s.image} alt="tech-image" />
+            <div className="img-container">
+              <img src={s.image} alt="tech-image" />
+            </div>
             <h1>{s.name}</h1>
           </div>
         ))}

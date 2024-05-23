@@ -47,6 +47,13 @@
     color: #FFF;
 }
 
+.skill .img-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .skill img {
     width: 100px;
 }
