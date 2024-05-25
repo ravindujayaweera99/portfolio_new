@@ -8,6 +8,14 @@ import discussion from "../../assets/project-images/discussion.png";
 const projects = [
   {
     id: 1,
+    name: "Goal Setter Web App",
+    desc: "This project developed using the MERN stack (MongoDB, Express.js, React, Node.js), incorporating JWT for secure authentication. Leveraging Redux for state management and Axios for API calls.",
+    tech: "React, Express.js, MongoDB, Node.js",
+    img: dummy,
+    link: "https://github.com/ravindujayaweera99/goalbuddyapp",
+  },
+  {
+    id: 2,
     name: "Personal Portfolio",
     desc: "This is the project you are currently visiting in.",
     tech: "React, CSS",
@@ -15,7 +23,7 @@ const projects = [
     link: "/",
   },
   {
-    id: 2,
+    id: 3,
     name: "Sales and Inventory System",
     desc: "This is a full stack web app created for a Paint shop to control their day to day sales and Inventory management work.",
     tech: "HTML, CSS, Javascript, php, mySQL",
@@ -23,7 +31,7 @@ const projects = [
     link: "https://github.com/ravindujayaweera99/Paint_Shop_App_New",
   },
   {
-    id: 3,
+    id: 4,
     name: "Sanlak (Pvt) Ltd Official Website",
     desc: "Official Website of SANLAK (Pvt) Ltd.This is a website using to showcase their services and projects to customers.",
     tech: "HTML, CSS, Javascript, Figma",
@@ -31,7 +39,7 @@ const projects = [
     link: "https://www.sanlak.lk",
   },
   {
-    id: 4,
+    id: 5,
     name: "Coffee Shop Website",
     desc: "Specially made for a client from Romania.This is a website for a Coffee shop that showcase their products and details.",
     tech: "HTML, CSS, Javascript, Figma",
@@ -39,7 +47,7 @@ const projects = [
     link: "https://ravindujayaweera99.github.io/landing_coffee/",
   },
   {
-    id: 5,
+    id: 6,
     name: "Discussion Website Front-end",
     desc: "Specially made for a client from Malta.This is only a front end Development for a discussion web application.",
     tech: "HTML, CSS, Figma",
