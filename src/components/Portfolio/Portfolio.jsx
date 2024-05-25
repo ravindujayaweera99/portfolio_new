@@ -12,7 +12,7 @@ const projects = [
     name: "Goal Setter Web App",
     desc: "This project developed using the MERN stack (MongoDB, Express.js, React, Node.js), incorporating JWT for secure authentication. Leveraging Redux for state management and Axios for API calls.",
     tech: "React, Express.js, MongoDB, Node.js",
-    img: dummy,
+    img: mern,
     link: "https://github.com/ravindujayaweera99/goalbuddyapp",
   },
   {
