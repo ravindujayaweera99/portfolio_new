@@ -4,6 +4,7 @@ import portfolio from "../../assets/project-images/portfolio.png";
 import coffee from "../../assets/project-images/coffee.png";
 import dummy from "../../assets/project-images/dummy.webp";
 import discussion from "../../assets/project-images/discussion.png";
+import mern from "../../assets/project-images/mern.jpg";
 
 const projects = [
   {
