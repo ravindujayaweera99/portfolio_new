@@ -92,4 +92,8 @@
     .contact-wrapper form {
         width: 90%;
     }
+
+    .contact-title {
+        font-size: 15px;
+    }
 }
