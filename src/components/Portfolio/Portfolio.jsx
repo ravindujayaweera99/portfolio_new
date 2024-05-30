@@ -7,6 +7,7 @@ import discussion from "../../assets/project-images/discussion.png";
 import mern from "../../assets/project-images/mern.jpg";
 import job from "../../assets/project-images/job.png";
 import textSum from "../../assets/project-images/textSum.png"
+import tailwindLanding from "../../assets/project-images/tailwindLanding.png"
 
 const projects = [
   {
@@ -35,6 +36,14 @@ const projects = [
   },
   {
     id: 4,
+    name: "Landing Page using Tailwind CSS",
+    desc: "This Landing page developed as a solution for a challenge in Frontend Mentor Challenges",
+    tech: "Tailwind CSS, HTML",
+    img: tailwindLanding,
+    link: "https://ravindujayaweera99.github.io/tailwind_landing/",
+  },
+  {
+    id: 5,
     name: "Personal Portfolio",
     desc: "This is the project you are currently visiting in.",
     tech: "React, CSS",
@@ -42,7 +51,7 @@ const projects = [
     link: "/",
   },
   {
-    id: 5,
+    id: 6,
     name: "Sales and Inventory System",
     desc: "This is a full stack web app created for a Paint shop to control their day to day sales and Inventory management work.",
     tech: "HTML, CSS, Javascript, php, mySQL",
@@ -50,7 +59,7 @@ const projects = [
     link: "https://github.com/ravindujayaweera99/Paint_Shop_App_New",
   },
   {
-    id: 6,
+    id: 7,
     name: "Sanlak (Pvt) Ltd Official Website",
     desc: "Official Website of SANLAK (Pvt) Ltd.This is a website using to showcase their services and projects to customers.",
     tech: "HTML, CSS, Javascript, Figma",
@@ -58,7 +67,7 @@ const projects = [
     link: "https://www.sanlak.lk",
   },
   {
-    id: 7,
+    id: 8,
     name: "Coffee Shop Website",
     desc: "Specially made for a client from Romania.This is a website for a Coffee shop that showcase their products and details.",
     tech: "HTML, CSS, Javascript, Figma",
@@ -66,7 +75,7 @@ const projects = [
     link: "https://ravindujayaweera99.github.io/landing_coffee/",
   },
   {
-    id: 8,
+    id: 9,
     name: "Discussion Website Front-end",
     desc: "Specially made for a client from Malta.This is only a front end Development for a discussion web application.",
     tech: "HTML, CSS, Figma",

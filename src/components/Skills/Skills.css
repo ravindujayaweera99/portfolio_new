@@ -31,6 +31,7 @@
     border: 2px solid #FFC86A;
     border-radius: 8px;
     padding: 25px;
+    text-align: center;
 }
 
 .skill:hover {
