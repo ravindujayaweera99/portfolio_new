@@ -4,6 +4,7 @@ import feedback2 from "../../assets/feedback-images/feedback2.png";
 import feedback3 from "../../assets/feedback-images/feedback3.png";
 import feedback4 from "../../assets/feedback-images/feedback4.png";
 import feedback5 from "../../assets/feedback-images/feedback5.png";
+import feedback6 from "../../assets/feedback-images/feedback6.png";
 
 const feedbacks = [
   {
@@ -26,6 +27,10 @@ const feedbacks = [
     id: 5,
     src: feedback5,
   },
+  {
+    id:6,
+    src: feedback6
+  }
 ];
 
 const Feedback = () => {
