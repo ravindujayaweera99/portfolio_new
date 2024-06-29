@@ -6,8 +6,9 @@ import dummy from "../../assets/project-images/dummy.webp";
 import discussion from "../../assets/project-images/discussion.png";
 import mern from "../../assets/project-images/mern.jpg";
 import job from "../../assets/project-images/job.png";
-import textSum from "../../assets/project-images/textSum.png"
-import tailwindLanding from "../../assets/project-images/tailwindLanding.png"
+import textSum from "../../assets/project-images/textSum.png";
+import tailwindLanding from "../../assets/project-images/tailwindLanding.png";
+import scubaus from "../../assets/project-images/scubaus.png"
 
 const projects = [
   {
@@ -28,6 +29,14 @@ const projects = [
   },
   {
     id: 3,
+    name: "ScubaUs Landing Page",
+    desc: "This is a Self-Made business idea for a Scuba Diving business and I am currently Developing this website by adding each section of the website. Currently on Development!",
+    tech: "React, TailwindCSS",
+    img: scubaus,
+    link: "https://scubaus.vercel.app",
+  },
+  {
+    id: 4,
     name: "AI Text Summerizer",
     desc: "This project developed using the Express and Node.js and REST APIs",
     tech: "Express.js, Node.js, REST APIs, HTML, CSS",
@@ -35,7 +44,7 @@ const projects = [
     link: "https://github.com/ravindujayaweera99/text-summarization",
   },
   {
-    id: 4,
+    id: 5,
     name: "Landing Page using Tailwind CSS",
     desc: "This Landing page developed as a solution for a challenge in Frontend Mentor Challenges",
     tech: "Tailwind CSS, HTML",
@@ -43,7 +52,7 @@ const projects = [
     link: "https://ravindujayaweera99.github.io/tailwind_landing/",
   },
   {
-    id: 5,
+    id: 6,
     name: "Personal Portfolio",
     desc: "This is the project you are currently visiting in.",
     tech: "React, CSS",
@@ -51,7 +60,7 @@ const projects = [
     link: "/",
   },
   {
-    id: 6,
+    id: 7,
     name: "Sales and Inventory System",
     desc: "This is a full stack web app created for a Paint shop to control their day to day sales and Inventory management work.",
     tech: "HTML, CSS, Javascript, php, mySQL",
@@ -59,7 +68,7 @@ const projects = [
     link: "https://github.com/ravindujayaweera99/Paint_Shop_App_New",
   },
   {
-    id: 7,
+    id: 8,
     name: "Sanlak (Pvt) Ltd Official Website",
     desc: "Official Website of SANLAK (Pvt) Ltd.This is a website using to showcase their services and projects to customers.",
     tech: "HTML, CSS, Javascript, Figma",
@@ -67,7 +76,7 @@ const projects = [
     link: "https://www.sanlak.lk",
   },
   {
-    id: 8,
+    id: 9,
     name: "Coffee Shop Website",
     desc: "Specially made for a client from Romania.This is a website for a Coffee shop that showcase their products and details.",
     tech: "HTML, CSS, Javascript, Figma",
@@ -75,7 +84,7 @@ const projects = [
     link: "https://ravindujayaweera99.github.io/landing_coffee/",
   },
   {
-    id: 9,
+    id: 10,
     name: "Discussion Website Front-end",
     desc: "Specially made for a client from Malta.This is only a front end Development for a discussion web application.",
     tech: "HTML, CSS, Figma",
