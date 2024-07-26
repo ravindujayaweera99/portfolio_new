@@ -10,7 +10,8 @@ import mongodb from "../../assets/mongodb.png";
 import express from "../../assets/express.png";
 import java from "../../assets/java.png";
 import figma from "../../assets/figma.png";
-import tailwind from "../../assets/tailwind.png"
+import tailwind from "../../assets/tailwind.png";
+import laravel from "../../assets/laravel.png";
 
 const skills = [
   {
@@ -34,32 +35,37 @@ const skills = [
     image: mongodb,
   },
   {
+    id: 5,
+    name: "Laravel",
+    image: laravel,
+  },
+  {
     id: 6,
     name: "Tailwind CSS",
     image: tailwind,
   },
   {
-    id: 6,
+    id: 7,
     name: "HTML",
     image: html,
   },
   {
-    id: 7,
+    id: 8,
     name: "CSS",
     image: css,
   },
   {
-    id: 8,
+    id: 9,
     name: "Javascript",
     image: js,
   },
   {
-    id: 9,
+    id: 10,
     name: "php",
     image: php,
   },
   {
-    id: 10,
+    id: 11,
     name: "mySQL",
     image: mysql,
   },
