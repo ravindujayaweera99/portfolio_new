@@ -15,7 +15,7 @@
 
 .feedback-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     row-gap: 30px;
 }
 
@@ -29,7 +29,7 @@
 
 .feedback-container .feedback img {
     width: 80%;
-    height: 200px;
+    height: auto;
     border: 2px solid #FFC86A;
     opacity: 0.5;
 }
