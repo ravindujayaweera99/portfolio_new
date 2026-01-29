@@ -6,13 +6,11 @@ const About = () => {
       <h1>Something Little About Me</h1>
       <div className="wrapper">
         <p>
-          "Hey, I'm Ravindu Jayaweera, a web enthusiast with 2 years of
-          experience in the digital realm. I've had the pleasure of crafting
-          over 40 websites for clients from diverse corners of the globe. From
-          sleek and stylish portfolios to robust e-commerce platforms, I've
-          honed my skills to deliver top-notch web solutions. My passion lies in
-          creating engaging online experiences that captivate and convert. Let's
-          team up and bring your vision to life on the web!"
+          "Software Engineer with experience in full stack web development and
+          scalable system design. Experienced in building, enhancing, and
+          maintaining applications using modern frameworks and industry-standard
+          development practices. Strong background in frontend and backend
+          development, API integration and database design and development."
         </p>
       </div>
     </div>
