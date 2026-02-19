@@ -67,7 +67,7 @@ const projects = [
     tech: "React, Tailwind CSS",
     img: scubaus,
     link: "https://scubaus.vercel.app",
-    status: "Completed",
+    status: "Ongoing",
   },
   {
     id: 5,
