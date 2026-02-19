@@ -102,48 +102,60 @@ const projects = [
   },
 ];
 
+const toChips = (tech) =>
+  tech
+    .split(",")
+    .map((t) => t.trim())
+    .filter(Boolean);
+
 const Portfolio = () => {
   return (
-    <section className="portfolio2" id="portfolio">
-      <div className="portfolio2-bg" aria-hidden="true">
-        <span className="pblob p1" />
-        <span className="pblob p2" />
-      </div>
+    <section className="portC" id="portfolio">
+      <div className="portC-bg" aria-hidden="true" />
 
-      <header className="portfolio2-header">
-        <p className="portfolio2-kicker">Portfolio</p>
-        <h2 className="portfolio2-title">Projects I worked on</h2>
-        <p className="portfolio2-sub">
-          Projects focused on full-stack delivery, clean UI, and real world workflows.
-        </p>
-      </header>
+      <div className="portC-wrap">
+        <header className="portC-header">
+          <p className="portC-kicker">Portfolio</p>
+          <h2 className="portC-title">Projects I worked on</h2>
+          <p className="portC-sub">
+            Projects focused on full-stack delivery, clean UI, and real-world workflows.
+          </p>
+        </header>
 
-      <div className="portfolio2-grid">
-        {projects.map((p) => (
-          <a
-            key={p.id}
-            className="p-card"
-            href={p.link}
-            target={p.link === "/" ? "_self" : "_blank"}
-            rel={p.link === "/" ? undefined : "noreferrer"}
-          >
-            <div className="p-media">
-              <img src={p.img} alt={p.name} loading="lazy" />
-              <div className="p-shade" aria-hidden="true" />
-              <div className="p-topline" aria-hidden="true" />
-            </div>
+        <div className="portC-grid">
+          {projects.map((p) => (
+            <a
+              key={p.id}
+              className="pC-card"
+              href={p.link}
+              target={p.link === "/" ? "_self" : "_blank"}
+              rel={p.link === "/" ? undefined : "noreferrer"}
+            >
+              <div className="pC-media">
+                <img src={p.img} alt={p.name} loading="lazy" />
+                <div className="pC-shade" aria-hidden="true" />
+                <div className="pC-rail" aria-hidden="true" />
+              </div>
 
-            <div className="p-body">
-              <h3 className="p-title">{p.name}</h3>
-              <p className="p-desc">{p.desc}</p>
-              <p className="p-tech">{p.tech}</p>
-            </div>
+              <div className="pC-body">
+                <div className="pC-row">
+                  <h3 className="pC-title">{p.name}</h3>
+                  <span className="pC-cta">View ↗</span>
+                </div>
 
-            <span className="p-cta" aria-hidden="true">
-              View →
-            </span>
-          </a>
-        ))}
+                <p className="pC-desc">{p.desc}</p>
+
+                <div className="pC-tech">
+                  {toChips(p.tech).map((t) => (
+                    <span key={`${p.id}-${t}`} className="tChip">
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
       </div>
     </section>
   );

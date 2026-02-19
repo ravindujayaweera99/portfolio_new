@@ -18,68 +18,81 @@ const Hero = () => {
       el.style.setProperty("--my", `${e.clientY - r.top}px`);
     };
 
-    window.addEventListener("mousemove", onMove);
-    return () => window.removeEventListener("mousemove", onMove);
+    el.addEventListener("pointermove", onMove);
+    return () => el.removeEventListener("pointermove", onMove);
   }, []);
 
   return (
     <motion.section
       id="hero"
       ref={heroRef}
-      className="heroX"
+      className="heroC"
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75, ease: "easeInOut" }}
     >
-      {/* background */}
-      <div className="heroX-bg" aria-hidden="true" />
-      <div className="heroX-grain" aria-hidden="true" />
+      {/* corporate background */}
+      <div className="heroC-bg" aria-hidden="true" />
+      <div className="heroC-spot" aria-hidden="true" />
+      <div className="heroC-grain" aria-hidden="true" />
 
-      <div className="heroX-wrap">
+      <div className="heroC-wrap">
         {/* LEFT */}
-        <div className="heroX-left">
-          <div className="heroX-tag">
+        <div className="heroC-left">
+          <div className="heroC-tag">
             <span className="dot" />
             Available for freelance work
           </div>
 
-          <h1 className="heroX-title">
+          <h1 className="heroC-title">
             <span className="muted">Hi,</span> I’m{" "}
             <span className="accent">Ravindu Jayaweera</span>
             <br />
-            <span className="thin">I am Turning Ideas into Reality</span>
+            <span className="thin">Turning Ideas into Reality</span>
           </h1>
 
-          <div className="heroX-chips" aria-hidden="true">
+          <p className="heroC-desc">
+            Full-stack engineer focused on clean UI, maintainable codebases, and
+            reliable delivery from idea → production.
+          </p>
+
+          <div className="heroC-actions">
+            <button className="heroC-btn primary" onClick={openCv}>
+              View CV <span className="arrow">↗</span>
+            </button>
+            <a className="heroC-btn ghost" href="#contact">
+              Hire Me <span className="arrow">→</span>
+            </a>
+          </div>
+
+          <div className="heroC-chips" aria-hidden="true">
             <span className="chip">Timely Delivery</span>
             <span className="chip">Clean UI</span>
             <span className="chip">Flexible</span>
             <span className="chip">Updated</span>
           </div>
 
-          <a className="heroX-scroll" href="#skills">
+          <a className="heroC-scroll" href="#skills">
             <span className="mouse" />
             <span>Scroll to explore</span>
           </a>
         </div>
 
-        {/* RIGHT DOCK */}
-        <div className="heroX-right">
-          <div className="dock">
-            <button className="dock-btn primary" onClick={openCv}>
-              View CV
-              <span className="arrow">↗</span>
+        {/* RIGHT */}
+        <div className="heroC-right">
+          <div className="dockC">
+            <button className="dockC-btn primary" onClick={openCv}>
+              View CV <span className="arrow">↗</span>
             </button>
 
-            <a className="dock-btn ghost" href="#contact">
-              Hire Me
-              <span className="arrow">→</span>
+            <a className="dockC-btn ghost" href="#contact">
+              Hire Me <span className="arrow">→</span>
             </a>
 
-            <div className="dock-divider" />
+            <div className="dockC-divider" />
 
             <a
-              className="dock-link"
+              className="dockC-link"
               href="https://github.com/ravindujayaweera99"
               target="_blank"
               rel="noreferrer"
@@ -87,7 +100,7 @@ const Hero = () => {
               GitHub
             </a>
             <a
-              className="dock-link"
+              className="dockC-link"
               href="https://www.linkedin.com/in/ravindu-jayaweera-a170721b9/"
               target="_blank"
               rel="noreferrer"
@@ -95,7 +108,7 @@ const Hero = () => {
               LinkedIn
             </a>
             <a
-              className="dock-link"
+              className="dockC-link"
               href="https://web.facebook.com/ravindu.jayaweera.96/"
               target="_blank"
               rel="noreferrer"
@@ -104,10 +117,11 @@ const Hero = () => {
             </a>
           </div>
 
-          <div className="floatCard" aria-hidden="true">
-            <div className="floatRail" />
-            <p className="floatTitle">Quick Snapshot</p>
-            <div className="floatGrid">
+          <div className="heroC-snap" aria-hidden="true">
+            <div className="heroC-rail" />
+            <p className="heroC-snapTitle">Quick Snapshot</p>
+
+            <div className="heroC-grid">
               <div className="tile">
                 <p className="k">Projects</p>
                 <p className="v">10+</p>
@@ -120,10 +134,10 @@ const Hero = () => {
                 <p className="k">Experience</p>
                 <p className="v">2+ Years</p>
               </div>
-              {/* <div className="tile">
+              <div className="tile">
                 <p className="k">Focus</p>
-                <p className="v"></p>
-              </div> */}
+                <p className="v">Full-Stack</p>
+              </div>
             </div>
           </div>
         </div>

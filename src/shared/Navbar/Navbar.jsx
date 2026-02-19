@@ -26,7 +26,6 @@ const Navbar = () => {
 
     const obs = new IntersectionObserver(
       (entries) => {
-        // pick the most visible entry
         const visible = entries
           .filter((e) => e.isIntersecting)
           .sort((a, b) => (b.intersectionRatio ?? 0) - (a.intersectionRatio ?? 0))[0];
@@ -48,7 +47,6 @@ const Navbar = () => {
       const y = window.scrollY;
       const goingDown = y > lastY;
 
-      // don't hide at very top
       if (y < 80) setHidden(false);
       else setHidden(goingDown);
 
@@ -61,30 +59,32 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={`navX ${hidden ? "navX--hidden" : ""}`}
-      initial={{ y: -30, opacity: 0 }}
+      className={`navC ${hidden ? "navC--hidden" : ""}`}
+      initial={{ y: -24, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.7, ease: "easeInOut" }}
+      transition={{ duration: 0.65, ease: "easeInOut" }}
     >
-      <div className="navX-inner">
-        <a className="navX-logo" href="#hero" aria-label="Home">
-          <span className="navX-logoBadge">RJ</span>
+      <div className="navC-inner">
+        <a className="navC-logo" href="#hero" aria-label="Home">
+          <span className="navC-logoBadge">RJ</span>
         </a>
 
-        <ul className="navX-links">
+        <ul className="navC-links">
           {sections.slice(0, 4).map((s) => (
             <li key={s.id}>
-              <a className={`navX-link ${active === s.id ? "isActive" : ""}`} href={`#${s.id}`}>
+              <a
+                className={`navC-link ${active === s.id ? "isActive" : ""}`}
+                href={`#${s.id}`}
+              >
                 {s.label}
               </a>
             </li>
           ))}
         </ul>
 
-        <div className="navX-actions">
-          <a className="navX-btn" href="#contact">
-            Let's Talk
-            <span className="navX-arrow">→</span>
+        <div className="navC-actions">
+          <a className="navC-btn" href="#contact">
+            Let’s Talk <span className="navC-arrow">→</span>
           </a>
         </div>
       </div>

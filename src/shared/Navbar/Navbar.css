@@ -1,86 +1,69 @@
-/* ====== Nav shell ====== */
-.navX {
+/* ========= NAVBAR (Corporate Minimal) ========= */
+
+.navC {
   position: fixed;
   top: 14px;
-
-  /* ✅ Center reliably */
   left: 14px;
   right: 14px;
   margin-left: auto;
   margin-right: auto;
   width: min(1100px, calc(100% - 28px));
-
   z-index: 2000;
+
   border-radius: 18px;
   padding: 10px 12px;
 
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.08),
-    rgba(255, 255, 255, 0.04)
-  );
-  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.10);
   backdrop-filter: blur(12px);
 
-  box-shadow:
-    0 26px 70px rgba(0, 0, 0, 0.55),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  box-shadow: 0 26px 70px rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.06);
 
-  transition: transform 220ms ease, opacity 220ms ease;
+  transition: transform 200ms ease, opacity 200ms ease;
 }
 
-.navX--hidden {
+.navC--hidden {
   transform: translateY(-110%);
   opacity: 0;
 }
 
-
-/* hide on scroll down */
-.navX--hidden {
-  transform: translateX(-50%) translateY(-110%);
-  opacity: 0;
-}
-
-.navX-inner {
+.navC-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 14px;
 }
 
-/* ====== Logo ====== */
-.navX-logo {
+/* Logo */
+.navC-logo {
   text-decoration: none;
 }
 
-.navX-logoBadge {
+.navC-logoBadge {
   width: 42px;
   height: 42px;
   border-radius: 14px;
   display: grid;
   place-items: center;
 
-  font-weight: 900;
+  font-weight: 950;
   letter-spacing: 0.6px;
-  color: #0b0f17;
+  color: #070a12;
 
-  background: #ffc86a;
-  box-shadow:
-    0 18px 45px rgba(255, 200, 106, 0.18),
-    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  /* blue accent */
+  background: rgba(96,165,250,0.95);
+  box-shadow: 0 18px 55px rgba(96,165,250,0.18), inset 0 1px 0 rgba(255,255,255,0.20);
 
-  transition: transform 200ms ease, box-shadow 200ms ease;
+  transition: transform 160ms ease, box-shadow 160ms ease;
 }
 
-.navX-logoBadge:hover {
+.navC-logoBadge:hover {
   transform: translateY(-2px);
-  box-shadow:
-    0 26px 70px rgba(255, 200, 106, 0.22),
-    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  box-shadow: 0 24px 70px rgba(96,165,250,0.22), inset 0 1px 0 rgba(255,255,255,0.22);
 }
 
-/* ====== Links ====== */
-.navX-links {
+/* Links */
+.navC-links {
   list-style: none;
   display: flex;
   align-items: center;
@@ -89,47 +72,43 @@
   margin: 0;
 }
 
-.navX-link {
-  position: relative;
+.navC-link {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.78);
+  color: rgba(255,255,255,0.78);
   font-size: 13px;
-  font-weight: 750;
+  font-weight: 800;
   padding: 10px 12px;
   border-radius: 999px;
 
   border: 1px solid transparent;
-  transition: transform 200ms ease, color 200ms ease, border-color 200ms ease, background 200ms ease;
+  background: transparent;
+
+  transition: transform 160ms ease, color 160ms ease, border-color 160ms ease, background 160ms ease;
 }
 
-.navX-link:hover {
+.navC-link:hover {
   transform: translateY(-2px);
-  color: rgba(255, 255, 255, 0.95);
-  background: rgba(0, 0, 0, 0.18);
-  border-color: rgba(255, 255, 255, 0.10);
+  color: rgba(255,255,255,0.94);
+  background: rgba(0,0,0,0.14);
+  border-color: rgba(255,255,255,0.10);
 }
 
-/* active link */
-.navX-link.isActive {
-  color: rgba(255, 255, 255, 0.95);
-  background: rgba(255, 200, 106, 0.10);
-  border-color: rgba(255, 200, 106, 0.24);
+/* Active link: blue outline */
+.navC-link.isActive {
+  color: rgba(255,255,255,0.94);
+  background: rgba(96,165,250,0.10);
+  border-color: rgba(96,165,250,0.22);
 }
 
-/* right side actions */
-.navX-actions {
+/* Actions */
+.navC-actions {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.navX-link.subtle {
-  background: rgba(0, 0, 0, 0.16);
-  border-color: rgba(255, 255, 255, 0.08);
-}
-
-/* CTA button */
-.navX-btn {
+/* CTA button: blue */
+.navC-btn {
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -138,34 +117,35 @@
   padding: 10px 14px;
   border-radius: 14px;
 
-  background: #ffc86a;
-  color: #0b0f17;
+  background: rgba(96,165,250,0.95);
+  color: #070a12;
+
   font-size: 13px;
-  font-weight: 900;
+  font-weight: 950;
   letter-spacing: 0.2px;
 
-  box-shadow: 0 18px 45px rgba(255, 200, 106, 0.18);
-  transition: transform 200ms ease, box-shadow 200ms ease;
+  box-shadow: 0 18px 55px rgba(96,165,250,0.18);
+  transition: transform 160ms ease, box-shadow 160ms ease;
 }
 
-.navX-btn:hover {
+.navC-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 26px 70px rgba(255, 200, 106, 0.22);
+  box-shadow: 0 24px 70px rgba(96,165,250,0.22);
 }
 
-.navX-arrow {
+.navC-arrow {
   font-weight: 900;
 }
 
-/* ====== Responsive ====== */
+/* Responsive */
 @media (max-width: 900px) {
-  .navX-links {
-    display: none; /* keep clean; can add hamburger later */
+  .navC-links {
+    display: none; /* keep minimal; can add hamburger later */
   }
 }
 
 @media (max-width: 767px) {
-  .navX {
-    display: none; /* keep your current behavior */
+  .navC {
+    display: none; /* keeping your current behavior */
   }
 }

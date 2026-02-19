@@ -1,5 +1,6 @@
-/* ====== Section ====== */
-.portfolio2 {
+/* ========= PORTFOLIO (Corporate Minimal) ========= */
+
+.portC {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -7,241 +8,229 @@
   overflow: hidden;
 }
 
-/* remove your old huge margin-top (use proper spacing instead) */
-#portfolio {
-  margin-top: 0;
-}
-
-/* ====== Background ambience ====== */
-.portfolio2-bg {
+/* subtle background (no yellow blobs) */
+.portC-bg {
   position: absolute;
-  inset: -140px;
-  pointer-events: none;
+  inset: 0;
   z-index: 0;
-  filter: blur(55px);
-  opacity: 0.7;
+  background:
+    radial-gradient(900px 700px at 15% 20%, rgba(96,165,250,0.08), transparent 60%),
+    radial-gradient(900px 700px at 85% 30%, rgba(167,139,250,0.06), transparent 60%);
+  pointer-events: none;
 }
 
-.pblob {
-  position: absolute;
-  width: 560px;
-  height: 560px;
-  border-radius: 999px;
-  background: radial-gradient(circle at 30% 30%, rgba(255, 200, 106, 0.22), transparent 60%);
-  animation: drift2 11s ease-in-out infinite;
-}
-
-.pblob.p1 { left: 10%; top: 10%; }
-.pblob.p2 { right: 6%; bottom: -10%; opacity: 0.55; animation-delay: -4s; }
-
-@keyframes drift2 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(18px, -16px) scale(1.05); }
-}
-
-/* ====== Header ====== */
-.portfolio2-header {
+.portC-wrap {
   position: relative;
   z-index: 1;
+  width: min(1150px, 100%);
+  margin: 0 auto;
+}
+
+/* Header (same language as Skills/About) */
+.portC-header {
   max-width: 860px;
-  margin: 0 auto 34px auto;
+  margin: 0 auto 30px auto;
   text-align: center;
 }
 
-.portfolio2-kicker {
+.portC-kicker {
   display: inline-block;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 850;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  font-size: 12px;
-  color: #ffc86a;
-  background: rgba(255, 200, 106, 0.10);
-  border: 1px solid rgba(255, 200, 106, 0.22);
+
+  color: rgba(255,255,255,0.78);
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
   padding: 8px 12px;
   border-radius: 999px;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
-.portfolio2-title {
+.portC-title {
   margin: 0;
-  font-size: clamp(28px, 3.4vw, 44px);
-  color: rgba(255, 255, 255, 0.95);
+  font-size: clamp(28px, 3.2vw, 44px);
+  color: rgba(255,255,255,0.94);
   line-height: 1.15;
+  letter-spacing: 0.2px;
 }
 
-.portfolio2-sub {
-  margin: 12px auto 0 auto;
+.portC-sub {
+  margin: 10px auto 0 auto;
   max-width: 62ch;
-  color: rgba(255, 255, 255, 0.68);
+  color: rgba(255,255,255,0.70);
   font-size: 15px;
   line-height: 1.65;
 }
 
-/* ====== Grid ====== */
-.portfolio2-grid {
-  position: relative;
-  z-index: 1;
-  max-width: 1150px;
-  margin: 0 auto;
+/* Grid */
+.portC-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
 }
 
-/* ====== Card ====== */
-.p-card {
-  position: relative;
+/* Card */
+.pC-card {
+  text-decoration: none;
+  border-radius: 18px;
+  overflow: hidden;
+
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.10);
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 18px 70px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.06);
+  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease, box-shadow 160ms ease;
   display: flex;
   flex-direction: column;
-  text-decoration: none;
-  border-radius: 20px;
-  overflow: hidden;
-
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.06),
-    rgba(255, 255, 255, 0.02)
-  );
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  backdrop-filter: blur(12px);
-
-  box-shadow:
-    0 24px 70px rgba(0, 0, 0, 0.55),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08);
-
-  transform: translateY(0);
-  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+  min-height: 420px; /* consistent grid height */
 }
 
-.p-card:hover {
-  transform: translateY(-7px);
-  border-color: rgba(255, 200, 106, 0.30);
-  box-shadow:
-    0 32px 90px rgba(0, 0, 0, 0.65),
-    0 0 0 6px rgba(255, 200, 106, 0.06),
-    inset 0 1px 0 rgba(255, 255, 255, 0.10);
+.pC-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(96,165,250,0.22);
+  background: rgba(255,255,255,0.06);
+  box-shadow: 0 24px 80px rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.08);
 }
 
-/* ====== Media ====== */
-.p-media {
+/* Media */
+.pC-media {
   position: relative;
-  height: 190px;
+  height: 185px;
   overflow: hidden;
 }
 
-.p-media img {
+.pC-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: scale(1.02);
-  transition: transform 320ms ease;
   display: block;
+  transform: scale(1.02);
+  transition: transform 240ms ease;
 }
 
-.p-card:hover .p-media img {
+.pC-card:hover .pC-media img {
   transform: scale(1.06);
 }
 
-/* dark gradient shade (rich) */
-.p-shade {
+.pC-shade {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0.05),
-    rgba(0, 0, 0, 0.55)
+    rgba(0,0,0,0.06),
+    rgba(0,0,0,0.55)
   );
 }
 
-/* glow topline like the skills rail */
-.p-topline {
+/* rail (blue accent) */
+.pC-rail {
   position: absolute;
   left: 14px;
   right: 14px;
   top: 12px;
   height: 2px;
-  background: linear-gradient(90deg, transparent, rgba(255, 200, 106, 0.55), transparent);
+  background: linear-gradient(90deg, transparent, rgba(96,165,250,0.55), transparent);
   opacity: 0.9;
 }
 
-/* ====== Body ====== */
-.p-body {
-  padding: 16px 16px 18px;
+/* Body */
+.pC-body {
+  padding: 16px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  flex: 1;
 }
 
-.p-title {
+.pC-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.pC-title {
   margin: 0;
-  font-size: 16px;
-  font-weight: 750;
-  color: rgba(255, 255, 255, 0.95);
+  font-size: 15px;
+  font-weight: 900;
+  color: rgba(255,255,255,0.92);
   letter-spacing: 0.2px;
+  line-height: 1.25;
 }
 
-.p-desc {
+.pC-cta {
+  font-size: 12px;
+  font-weight: 850;
+  color: rgba(255,255,255,0.78);
+  background: rgba(0,0,0,0.14);
+  border: 1px solid rgba(255,255,255,0.10);
+  padding: 7px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: border-color 160ms ease, color 160ms ease;
+}
+
+.pC-card:hover .pC-cta {
+  border-color: rgba(96,165,250,0.22);
+  color: rgba(255,255,255,0.90);
+}
+
+.pC-desc {
   margin: 0;
-  color: rgba(255, 255, 255, 0.68);
+  color: rgba(255,255,255,0.70);
   font-size: 13px;
   line-height: 1.55;
 
-  /* keeps cards same height */
+  /* consistent height */
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-.p-tech {
-  margin: 0;
-  font-size: 12px;
-  font-weight: 650;
-  letter-spacing: 0.2px;
-  color: rgba(255, 200, 106, 0.95);
-  padding-top: 2px;
+/* Tech chips */
+.pC-tech {
+  margin-top: auto; /* pushes chips to bottom -> consistent layout */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 6px;
 }
 
-/* CTA appears on hover (desktop) */
-.p-cta {
-  position: absolute;
-  right: 14px;
-  bottom: 14px;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.2px;
-  color: rgba(255, 255, 255, 0.9);
-  background: rgba(0, 0, 0, 0.35);
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  padding: 8px 10px;
+.tChip {
+  font-size: 11px;
+  font-weight: 800;
+  color: rgba(255,255,255,0.82);
+  background: rgba(0,0,0,0.14);
+  border: 1px solid rgba(255,255,255,0.10);
+  padding: 7px 10px;
   border-radius: 999px;
-  opacity: 0;
-  transform: translateY(6px);
-  transition: opacity 220ms ease, transform 220ms ease;
 }
 
-.p-card:hover .p-cta {
-  opacity: 1;
-  transform: translateY(0);
+/* Responsive */
+@media (max-width: 1100px) {
+  .portC-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
-/* ====== Mobile: details always visible, no hover dependency ====== */
 @media (max-width: 767px) {
-  .portfolio2 {
+  .portC {
     padding: 56px 14px 70px;
   }
 
-  .portfolio2-grid {
+  .portC-grid {
     grid-template-columns: 1fr;
-    gap: 12px;
   }
 
-  .p-media {
+  .pC-media {
     height: 200px;
   }
 
-  .p-cta {
-    opacity: 1;
-    transform: translateY(0);
+  .pC-card {
+    min-height: unset;
   }
 }

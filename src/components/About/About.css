@@ -1,38 +1,24 @@
-.about2 {
+/* ========= ABOUT (Corporate Minimal) ========= */
+
+.aboutC {
   position: relative;
   width: 100%;
   padding: clamp(70px, 7vw, 110px) clamp(16px, 5vw, 80px);
   overflow: hidden;
 }
 
-/* Background ambience */
-.about2-bg {
+/* subtle background hint like Skills */
+.aboutC-bg {
   position: absolute;
-  inset: -140px;
-  pointer-events: none;
+  inset: 0;
   z-index: 0;
-  filter: blur(55px);
-  opacity: 0.7;
+  background:
+    radial-gradient(900px 700px at 15% 25%, rgba(96,165,250,0.08), transparent 60%),
+    radial-gradient(900px 700px at 85% 30%, rgba(167,139,250,0.06), transparent 60%);
+  pointer-events: none;
 }
 
-.ablob {
-  position: absolute;
-  width: 520px;
-  height: 520px;
-  border-radius: 999px;
-  background: radial-gradient(circle at 30% 30%, rgba(255, 200, 106, 0.18), transparent 60%);
-  animation: adr 11s ease-in-out infinite;
-}
-
-.ablob.a1 { left: 8%; top: 15%; }
-.ablob.a2 { right: 8%; bottom: -15%; opacity: 0.55; animation-delay: -4s; }
-
-@keyframes adr {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(18px, -16px) scale(1.05); }
-}
-
-.about2-wrap {
+.aboutC-wrap {
   position: relative;
   z-index: 1;
   width: min(980px, 100%);
@@ -40,82 +26,76 @@
 }
 
 /* Header */
-.about2-header {
+.aboutC-header {
   text-align: center;
   max-width: 820px;
-  margin: 0 auto 28px auto;
+  margin: 0 auto 24px auto;
 }
 
-.about2-kicker {
+.aboutC-kicker {
   display: inline-block;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 850;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  font-size: 12px;
-  color: #ffc86a;
-  background: rgba(255, 200, 106, 0.10);
-  border: 1px solid rgba(255, 200, 106, 0.22);
+
+  color: rgba(255,255,255,0.78);
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
   padding: 8px 12px;
   border-radius: 999px;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
-.about2-title {
+.aboutC-title {
   margin: 0;
   font-size: clamp(28px, 3.2vw, 44px);
-  color: rgba(255, 255, 255, 0.95);
+  color: rgba(255,255,255,0.94);
   line-height: 1.15;
+  letter-spacing: 0.2px;
 }
 
-.about2-sub {
-  margin: 12px auto 0 auto;
+.aboutC-sub {
+  margin: 10px auto 0 auto;
   max-width: 62ch;
-  color: rgba(255, 255, 255, 0.68);
+  color: rgba(255,255,255,0.70);
   font-size: 15px;
   line-height: 1.65;
 }
 
-/* Main card */
-.about2-card {
+/* Card (same language as Skills panel) */
+.aboutC-card {
   position: relative;
-  border-radius: 22px;
+  border-radius: 18px;
   padding: 22px;
-
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.06),
-    rgba(255, 255, 255, 0.02)
-  );
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  backdrop-filter: blur(12px);
-
-  box-shadow:
-    0 24px 80px rgba(0, 0, 0, 0.60),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.10);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 18px 70px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.06);
   overflow: hidden;
 }
 
-/* Glow rail */
-.about2-rail {
+/* Rail */
+.aboutC-rail {
   position: absolute;
   left: 16px;
   right: 16px;
   top: 16px;
   height: 2px;
-  background: linear-gradient(90deg, transparent, rgba(255, 200, 106, 0.55), transparent);
+  background: linear-gradient(90deg, transparent, rgba(96,165,250,0.55), transparent);
   opacity: 0.9;
 }
 
-.about2-text {
+.aboutC-text {
   margin: 8px 0 0 0;
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255,255,255,0.72);
   font-size: 15px;
   line-height: 1.75;
   text-align: left;
 }
 
 /* Stats row */
-.about2-stats {
+.aboutC-stats {
   margin-top: 18px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -124,26 +104,33 @@
 
 .aStat {
   padding: 12px;
-  border-radius: 16px;
-  background: rgba(0, 0, 0, 0.22);
-  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 14px;
+  background: rgba(0,0,0,0.14);
+  border: 1px solid rgba(255,255,255,0.10);
+  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.aStat:hover {
+  transform: translateY(-2px);
+  border-color: rgba(96,165,250,0.22);
+  background: rgba(0,0,0,0.20);
 }
 
 .aStat .k {
   margin: 0;
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.62);
+  color: rgba(255,255,255,0.62);
 }
 
 .aStat .v {
   margin: 6px 0 0;
   font-size: 14px;
-  font-weight: 900;
-  color: rgba(255, 255, 255, 0.92);
+  font-weight: 950;
+  color: rgba(255,255,255,0.92);
 }
 
 /* Chips */
-.about2-chips {
+.aboutC-chips {
   margin-top: 14px;
   display: flex;
   flex-wrap: wrap;
@@ -151,32 +138,39 @@
   justify-content: center;
 }
 
-.about2-chips .chip {
+.aboutC-chips .chip {
   padding: 10px 12px;
   border-radius: 999px;
   font-size: 13px;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.86);
-  background: rgba(0, 0, 0, 0.24);
-  border: 1px solid rgba(255, 255, 255, 0.10);
+  font-weight: 800;
+  color: rgba(255,255,255,0.86);
+  background: rgba(0,0,0,0.14);
+  border: 1px solid rgba(255,255,255,0.10);
+  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.aboutC-chips .chip:hover {
+  transform: translateY(-2px);
+  border-color: rgba(96,165,250,0.22);
+  background: rgba(0,0,0,0.20);
 }
 
 /* Responsive */
 @media (max-width: 767px) {
-  .about2 {
+  .aboutC {
     padding: 56px 14px 70px;
   }
 
-  .about2-card {
+  .aboutC-card {
     padding: 16px;
     border-radius: 18px;
   }
 
-  .about2-stats {
+  .aboutC-stats {
     grid-template-columns: 1fr;
   }
 
-  .about2-text {
+  .aboutC-text {
     font-size: 13px;
   }
 }
