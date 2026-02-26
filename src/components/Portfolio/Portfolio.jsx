@@ -31,6 +31,7 @@ import springboot from "../../assets/springboot.png";
 import rabbitmq from "../../assets/rabbitmq.png";
 import docker from "../../assets/docker.png";
 import postgresql from "../../assets/postgresql.png";
+import csharp from "../../assets/csharp.png";
 
 const projects = [
   {
