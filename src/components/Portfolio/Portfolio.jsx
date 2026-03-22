@@ -1,5 +1,11 @@
 import "./Portfolio.css";
 
+/* NEW project images */
+import bookstore from "../../assets/project-images/bookstore.png";
+import employee from "../../assets/project-images/employee.png";
+import pizza from "../../assets/project-images/pizza.png";
+
+/* existing images */
 import sanlak from "../../assets/project-images/sanlak.png";
 import portfolio from "../../assets/project-images/portfolio.png";
 import coffee from "../../assets/project-images/coffee.png";
@@ -32,10 +38,41 @@ import rabbitmq from "../../assets/rabbitmq.png";
 import docker from "../../assets/docker.png";
 import postgresql from "../../assets/postgresql.png";
 import csharp from "../../assets/csharp.png";
+import go from "../../assets/go.png";
+import dotnet from "../../assets/dotnet.png";
+import sqlserver from "../../assets/sqlserver.png";
 
 const projects = [
   {
     id: 1,
+    name: "Book Store Microservices Platform",
+    desc: "Microservices-based bookstore with authentication, async messaging, and API gateway.",
+    tech: "Java, Spring Boot, PostgreSQL, RabbitMQ, Spring Cloud, Docker, REST APIs",
+    img: bookstore,
+    link: "https://github.com/your-repo-link",
+    status: "Ongoing",
+  },
+  {
+    id: 2,
+    name: "Employee Management System Backend",
+    desc: "RESTful API with full CRUD operations using .NET 8 and Entity Framework Core.",
+    tech: "C#, .NET 8, SQL Server, REST APIs",
+    img: employee,
+    link: "https://github.com/your-repo-link",
+    status: "Completed",
+  },
+  {
+    id: 3,
+    name: "Pizza Order Tracking System",
+    desc: "Real-time pizza tracking app with SSE, goroutines, and admin dashboard.",
+    tech: "Go, Gin, MySQL, REST APIs, HTML, CSS",
+    img: pizza,
+    link: "https://github.com/your-repo-link",
+    status: "Ongoing",
+  },
+
+  {
+    id: 4,
     name: "Smart Appointment and Notification Platform",
     desc: "Appointment booking + notifications with scalable architecture.",
     tech: "React, TailwindCSS, SpringBoot, PostgreSQL, RabbitMQ, Docker",
@@ -44,7 +81,7 @@ const projects = [
     status: "Ongoing",
   },
   {
-    id: 2,
+    id: 5,
     name: "Goal Setter Web App",
     desc: "MERN app with JWT auth, Redux state, and API integration.",
     tech: "React, Express.js, MongoDB, Node.js",
@@ -53,7 +90,7 @@ const projects = [
     status: "Completed",
   },
   {
-    id: 3,
+    id: 6,
     name: "Job Listing Site",
     desc: "React frontend with JSON Server backend for rapid prototyping.",
     tech: "React, JSON Server",
@@ -62,7 +99,7 @@ const projects = [
     status: "Completed",
   },
   {
-    id: 4,
+    id: 7,
     name: "ScubaUs Landing Page",
     desc: "Business landing page, expanding section by section.",
     tech: "React, Tailwind CSS",
@@ -71,7 +108,7 @@ const projects = [
     status: "Ongoing",
   },
   {
-    id: 5,
+    id: 8,
     name: "AI Text Summarizer",
     desc: "Node + Express app consuming REST APIs to summarize text.",
     tech: "Express.js, Node.js, REST APIs, HTML, CSS",
@@ -80,7 +117,7 @@ const projects = [
     status: "Completed",
   },
   {
-    id: 6,
+    id: 9,
     name: "Full Stack Blog App",
     desc: "Posts + comments with separate Admin and User dashboards.",
     tech: "Laravel, Tailwind CSS, MySQL, HTML",
@@ -89,7 +126,7 @@ const projects = [
     status: "Completed",
   },
   {
-    id: 7,
+    id: 10,
     name: "Tailwind Landing Page",
     desc: "Frontend Mentor solution built with Tailwind.",
     tech: "Tailwind CSS, HTML",
@@ -98,7 +135,7 @@ const projects = [
     status: "Completed",
   },
   {
-    id: 8,
+    id: 11,
     name: "Personal Portfolio",
     desc: "The portfolio website you are currently viewing.",
     tech: "React, CSS",
@@ -107,7 +144,7 @@ const projects = [
     status: "Completed",
   },
   {
-    id: 9,
+    id: 12,
     name: "Sales & Inventory System",
     desc: "Full stack app to manage inventory and sales for a paint shop.",
     tech: "HTML, CSS, JavaScript, PHP, MySQL",
@@ -116,7 +153,7 @@ const projects = [
     status: "Completed",
   },
   {
-    id: 10,
+    id: 13,
     name: "Sanlak (Pvt) Ltd Website",
     desc: "Official company website showcasing services and projects.",
     tech: "HTML, CSS, JavaScript, Figma",
@@ -125,7 +162,7 @@ const projects = [
     status: "Completed",
   },
   {
-    id: 11,
+    id: 14,
     name: "Coffee Shop Website",
     desc: "Client website for a coffee shop in Romania.",
     tech: "HTML, CSS, JavaScript, Figma",
@@ -134,7 +171,7 @@ const projects = [
     status: "Completed",
   },
   {
-    id: 12,
+    id: 15,
     name: "Discussion Website Front-end",
     desc: "Front-end only discussion web app for a client in Malta.",
     tech: "HTML, CSS, Figma",
@@ -166,8 +203,19 @@ const techLogoMap = {
   RabbitMQ: rabbitmq,
   Docker: docker,
   PostgreSQL: postgresql,
+  "C#": csharp,
+
+  /* new mappings */
+  Go: go,
+  Golang: go,
+  ".NET": dotnet,
+  ".NET 8": dotnet,
+  "SQL Server": sqlserver,
+
   "REST APIs": null,
   "JSON Server": null,
+  "Spring Cloud": null,
+  Gin: null,
 };
 
 const toChips = (tech) =>
@@ -211,12 +259,11 @@ const Portfolio = () => {
                 <div className="pC-media">
                   <img src={p.img} alt={p.name} loading="lazy" />
                   <div className={`pC-status ${statusClass(p.status)}`}>
-                    <span className="pC-dot" aria-hidden="true" />
+                    <span className="pC-dot" />
                     {p.status}
                   </div>
-
-                  <div className="pC-shade" aria-hidden="true" />
-                  <div className="pC-rail" aria-hidden="true" />
+                  <div className="pC-shade" />
+                  <div className="pC-rail" />
                 </div>
 
                 <div className="pC-body">
@@ -227,12 +274,8 @@ const Portfolio = () => {
 
                   <p className="pC-desc">{p.desc}</p>
 
-                  {/* Compact Tech Logo Bar */}
                   <div className="pC-techbar">
-                    <div
-                      className="pC-techIcons"
-                      aria-label={`Tech stack for ${p.name}`}
-                    >
+                    <div className="pC-techIcons">
                       {shown.map((t) => {
                         const logo = techLogoMap[t];
                         return (
@@ -240,7 +283,6 @@ const Portfolio = () => {
                             key={`${p.id}-${t}`}
                             className={`tIcon ${logo ? "" : "tIconText"}`}
                             title={t}
-                            aria-label={t}
                           >
                             {logo ? (
                               <img src={logo} alt={t} loading="lazy" />
@@ -252,11 +294,7 @@ const Portfolio = () => {
                       })}
 
                       {extra > 0 && (
-                        <span
-                          className="tMore"
-                          title={techList.join(", ")}
-                          aria-label={`${extra} more technologies`}
-                        >
+                        <span className="tMore" title={techList.join(", ")}>
                           +{extra}
                         </span>
                       )}
