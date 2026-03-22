@@ -49,7 +49,7 @@ const projects = [
     desc: "Microservices-based bookstore with authentication, async messaging, and API gateway.",
     tech: "Java, Spring Boot, PostgreSQL, RabbitMQ, Spring Cloud, Docker, REST APIs",
     img: bookstore,
-    link: "https://github.com/your-repo-link",
+    link: "https://github.com/ravindujayaweera99/book-store-application",
     status: "Ongoing",
   },
   {
@@ -58,7 +58,7 @@ const projects = [
     desc: "Real-time pizza tracking app with SSE, goroutines, and admin dashboard.",
     tech: "Go, Gin, MySQL, REST APIs, HTML, CSS",
     img: pizza,
-    link: "https://github.com/your-repo-link",
+    link: "https://github.com/ravindujayaweera99/pizza-order-tracking",
     status: "Ongoing",
   },
  {
@@ -67,7 +67,7 @@ const projects = [
     desc: "RESTful API with full CRUD operations using .NET 8 and Entity Framework Core.",
     tech: "C#, .NET 8, SQL Server, REST APIs",
     img: employee,
-    link: "https://github.com/your-repo-link",
+    link: "https://github.com/ravindujayaweera99/employee-management",
     status: "Completed",
   },
   {
