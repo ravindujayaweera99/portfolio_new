@@ -54,15 +54,6 @@ const projects = [
   },
   {
     id: 2,
-    name: "Employee Management System Backend",
-    desc: "RESTful API with full CRUD operations using .NET 8 and Entity Framework Core.",
-    tech: "C#, .NET 8, SQL Server, REST APIs",
-    img: employee,
-    link: "https://github.com/your-repo-link",
-    status: "Completed",
-  },
-  {
-    id: 3,
     name: "Pizza Order Tracking System",
     desc: "Real-time pizza tracking app with SSE, goroutines, and admin dashboard.",
     tech: "Go, Gin, MySQL, REST APIs, HTML, CSS",
@@ -70,7 +61,15 @@ const projects = [
     link: "https://github.com/your-repo-link",
     status: "Ongoing",
   },
-
+ {
+    id: 3,
+    name: "Employee Management System Backend",
+    desc: "RESTful API with full CRUD operations using .NET 8 and Entity Framework Core.",
+    tech: "C#, .NET 8, SQL Server, REST APIs",
+    img: employee,
+    link: "https://github.com/your-repo-link",
+    status: "Completed",
+  },
   {
     id: 4,
     name: "Smart Appointment and Notification Platform",
